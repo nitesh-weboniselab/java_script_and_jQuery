@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="css/styles.css" rel="stylesheet" media="screen"  />
+<title>To-Do manager</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+
+</script>
+<script type="text/javascript" src="js/jquery.js" ></script>
+<script type="text/javascript" src="js/indexx.js">
+</script>
+
+
+</head>
+
+<body>
+ <div>	
+  <button id="btnadd">Add</button>
+  <input type="text" name="txtbox" id="txtb" style="display:none;">
+ </div>
+ <div id="tree">
+ </div>
+		
+<div class="QTPopup">
+	<div class="popupGrayBg"></div>
+	<div class="QTPopupCntnr">
+		<div class="gpBdrLeftTop"></div>
+		<div class="gpBdrRightTop"></div>
+		<div class="gpBdrTop"></div>
+		<div class="gpBdrLeft">
+			<div class="gpBdrRight">
+				<div class="caption">
+					Enter the sub-elelemt
+				</div>
+				<a href="#" class="closeBtn" title="Close"></a>
+				<div id="itemcontainer"></div>
+				<div class="content" id="container">
+				</div>
+			</div>
+		</div>
+		<div class="gpBdrLeftBottom"></div>
+		<div class="gpBdrRightBottom"></div>
+		<div class="gpBdrBottom"></div>
+</div>
+</div>
+</body>
+</html>
+
+<script  type="text/javascript" language="javascript"><!--
+$(document).ready(function(){
+	$(".QTPopup").css('display','none')
+	$(".lnchPopop").click(function(){
+		  $(".QTPopup").animate({width: 'show'}, 'slow');
+		   alert(event.currentTarget);
+		   $('#container').html('');
+		   $('#container').append('<input type="submit" value="addSub"><input type="text" value="">');
+		});
+		$(".closeBtn").click(function(){			
+			$(".QTPopup").css('display', 'none');
+		});
+});
+
+--></script>
