@@ -1,0 +1,63 @@
+<!-- NITESH WADEKAR-->
+<HTML> 
+<HEAD> 
+        <TITLE>A Simple calculator</TITLE> 
+
+
+<script src="calculator.js">
+</script>
+
+
+
+</HEAD>
+<BODY> 
+<fORM name = Calculator> 
+<CENTER><input type = text name = t1  id="cal" value = "" size =50><p> 
+<TABLE> 
+   <tr>   
+    
+     <td><input type = button value = "7" name= bSevan onclick = displaynum(7)> 
+     <input type = button value = "8" name= bEight onclick = displaynum(8)> 
+    <input type = button value = "9" name= bNine onclick = displaynum(9)> 
+     <input type = button value = "/" name = bdivied  onclick = operator("/")>
+   </tr>  
+   
+   <tr>
+    <td><input type = button value = "4" name="bFour" onclick = displaynum(4)> 
+        <input type = button value = "5" name =bFive onclick = displaynum(5)> 
+        <input type = button value = "6" name = bSix onclick = displaynum(6)>  
+        <input type = button value = "*" name = bmultiply  onclick = operator("*")>
+  </tr>
+
+  <tr>
+   <td><input type = button value = "1" name = bOne onclick = displaynum(1)> 
+       <input type = button value = "2" name = bTwo onclick = displaynum(2)> 
+       <input type = button value = "3" name = bThree onclick = displaynum(3)> 
+       <input type = button value = "- " name = bMinus onclick = operator("-")> 
+   </td>
+  </tr>
+ 	
+  <tr>
+    <td><input type = button value = "0" name = bZero onclick = displaynum(0)> 
+        <input type = button value = "%" name = bmod  onclick = operator("%")>
+        <input type = button value = "="  name= bequal onclick = equalto()> 
+        <input type = button value = "+" name = bplus onclick = operator("+")>
+    </td>  
+  </tr>
+ 
+  <tr>
+     <td><input type = button value = "Sin" name = sin onclick = mathFunction("sin")>
+         <input type = button value = "Cos" name = cos onclick = mathFunction("cos")>
+         <input type = button value = "Tan" name = tan onclick = mathFunction("tan")>
+         
+     </td>
+  </tr>
+  <tr>
+     <td><input type = button value = "clear" name = cleanner onclick = clearDisplay()>
+     </td>
+  </tr>
+</TABLE> 
+</CENTER> 
+</FORM> 
+</BODY> 
+</HTML> 
